@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3524AE221CD8FDB3008874E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524AE211CD8FDB3008874E7 /* main.m */; };
 		3524AE2A1CD8FE90008874E7 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524AE291CD8FE90008874E7 /* Box.m */; };
+		3524AE2F1CD92413008874E7 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524AE2E1CD92413008874E7 /* BinarySearchTree.m */; };
+		3524AE311CD928F8008874E7 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524AE301CD928F8008874E7 /* BinaryTreeNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		3524AE211CD8FDB3008874E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3524AE281CD8FE90008874E7 /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
 		3524AE291CD8FE90008874E7 /* Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		3524AE2B1CD9214E008874E7 /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		3524AE2C1CD9214E008874E7 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		3524AE2E1CD92413008874E7 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
+		3524AE301CD928F8008874E7 /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				3524AE211CD8FDB3008874E7 /* main.m */,
+				3524AE2B1CD9214E008874E7 /* BinaryTreeNode.h */,
+				3524AE301CD928F8008874E7 /* BinaryTreeNode.m */,
+				3524AE2C1CD9214E008874E7 /* BinarySearchTree.h */,
+				3524AE2E1CD92413008874E7 /* BinarySearchTree.m */,
 				3524AE281CD8FE90008874E7 /* Box.h */,
 				3524AE291CD8FE90008874E7 /* Box.m */,
 			);
@@ -123,7 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3524AE2F1CD92413008874E7 /* BinarySearchTree.m in Sources */,
 				3524AE221CD8FDB3008874E7 /* main.m in Sources */,
+				3524AE311CD928F8008874E7 /* BinaryTreeNode.m in Sources */,
 				3524AE2A1CD8FE90008874E7 /* Box.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "Box.h"
 #import <Foundation/Foundation.h>
+#import "BinarySearchTree.h"
 #define START NSDate *startTime = [NSDate date]
 #define FINISH                                                                 \
 NSLog(@"%s Time: %f", __func__, -[startTime timeIntervalSinceNow])
@@ -104,20 +105,42 @@ int main(int argc, const char *argv[]) {
     NSLog(@"A box fits %d times inside the other", [box2 fitsInside:box1]);
 
 #pragma mark - ASSIGNMENT SEARCHING ALGORITHMS
+    BinarySearchTree* myBST = [[BinarySearchTree alloc] init];
     int sortedArray[1000000];
     NSMutableArray *sortedMutableArray = [[NSMutableArray alloc] init];
+
     for (int x = 0; x < 1000000; x++) {
         sortedArray[x] = x;
         [sortedMutableArray addObject:@(x)];
     }
+
+    //BINARY SEARCH TREE INSERTION
+    for (int x = 0; x < 100000; x++) {
+        int randomNum = arc4random_uniform(100000);
+        [myBST insertObject:@(randomNum)];
+    }
     
-    //findIndexByValue(sortedMutableArray, @999999);
+    findIndexByValue(sortedMutableArray, @999999);
     findIndexByValueBinary(sortedMutableArray, @999999);
-    START;
+
     findIndexByValueRecursive(sortedMutableArray, @999999);
-    FINISH;
+
+
+    BinaryTreeNode* myNode = [myBST find:@999];
+    if(myNode != NULL)
+    {
+        NSLog(@"BST Found %@", myNode.object);
+    } else {
+        NSLog(@"BST Did Not Find the object");
+    }
+
+
     
-    //findIndexByValueC(sortedArray, 999999);
+    findIndexByValueC(sortedArray, 999999);
+
+
+
+
     
     return 0;
 }
